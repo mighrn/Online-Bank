@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<style>
+	#navigation {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		background-color: red;
+	}
+	nav ul {
+		margin: 0px;
+		padding: 5px 0px 5px 30px;
+	}
+	nav li {
+		display: inline;
+		margin-left: 50px;
+	}
+</style>
+<html>
+	<head>
+		<title>Online Banking Accounts Page</title>
+	</head>
+	<body>
+		<h1>Accounts</h1>
+		<nav id='navigation'>
+			<ul>
+				<li><a href='/home'>Home</a></li>
+				<li><a href='/accounts'>My Accounts</a></li>
+				<li><a href='/logout'>Logout</a></li>
+			</ul>
+		</nav>
+		<form action='/addAcct' method='post'>
+			<p><strong>Add New Account</strong></p>
+			<label>Account Name: <input type='text' name='acctnm' placeholder='Account Name' maxlength='35'required></label>
+			<br><button type='submit'>Create</button>
+		</form><hr>
+		<div id='acctList'>
+			<p><strong>Your accounts</strong></p>
+			<ul>

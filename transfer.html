@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Project Banking Account</title>
+	</head>
+	<body>
+		<p><strong>Select the amount and account to transfer to:</strong></p>
+		<form action='/tr' method='post'>
+			<label>Amount: <input type='number' name='amnt' placeholder='Amount' min='0' step='0.01' required></label><br>
+			<select name='uuid' required>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Online Banking New User</title>
+	</head>
+	<body>
+		<h1>Create a new account</h1>
+		<form action='/create' method='post'>
+			<label>First Name:<input type='text' name='fname' placeholder='First Name'required></label><br>
+			<label>Last Name:<input type='text' name='lname' placeholder='Last Name'required></label><br>
+			<label>Billing Address:<input type='text' name='address' placeholder='Address'required></label><br>
+			<label>Username:<input type='text' name='usrnm' placeholder='Username'required></label><br>
+			<label>Password:<input type='password' name='pswd' placeholder='Password'required></label><br>
+			<p>Weak passwords are <strong>not allowed</strong><br>Strong Passwords <strong>must</strong> abide the following 4 rules:
+			<ul>
+				<li>Contain at least one uppercase</li>
+				<li>Contain at least one number</li>
+				<li>Contain at least one special character (punctuation or spaces are acceptable)</li>
+				<li>Be at least 10 characters in length</li>
+			</ul>
+			</p>
+			<button type='submit'>Submit</button>
+		</form>
+	</body>
+</html>
+
+
